@@ -82,7 +82,6 @@ ul li:hover ul, ul li:focus ul {
 }
 main {
 	display:flex;
-	max-width: 760px;
 }
 
 section {
