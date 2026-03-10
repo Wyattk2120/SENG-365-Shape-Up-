@@ -1,20 +1,20 @@
-/*Name*/
+/*Wyatt King*/
 
-html{ 
+html{
 	background-image: url("../images/bg.jpeg");
 }
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: .625em auto;
 	width: 75%;
-	max-width: 1200px;	
+	max-width: 1200px;
 	border: 3px solid steelblue;
 	box-shadow: 5px 5px 15px black, -5px 0 15px 5px black;
 	background-color: white;
 }
 h1, h2, h3, p {
-		margin:0;
-		padding:0;
+	margin:0;
+	padding:0;
 }
 a {
 	font-weight: bold;
@@ -82,6 +82,7 @@ ul li:hover ul, ul li:focus ul {
 }
 main {
 	display:flex;
+	max-width: 760px;
 }
 
 section {
@@ -125,21 +126,21 @@ aside {
 	height: fit-content;
 }
 aside h2 {
-		font-size: 130%;
-		margin-bottom: .5em;
-		color: maroon;
+	font-size: 130%;
+	margin-bottom: .5em;
+	color: maroon;
 }
 aside ul {
 	line-height: 1.5;
 	list-style-type:none;
 	padding-left: .3125em;
-	
+
 }
 aside a {
-		color: steelblue;
+	color: steelblue;
 }
 aside a:hover, aside a:focus {
-		color: maroon
+	color: maroon
 }
 aside:first-of-type {
 	padding: .625em;
@@ -159,13 +160,13 @@ footer p {
 		width: 100%;
 		box-shadow: none;
 	}
-	header image{
+	header img{
 		display: none;
 	}
-	aside.Additional_Resources{
+	aside:first-child{
 		display:none;
 	}
-	section{
+	main section{
 		width: 75%;
 
 	}
@@ -174,12 +175,16 @@ footer p {
 	aside{
 		display: none;
 	}
-	section{
-		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
+	main section{
+		flex-basis: 100%;
+		padding-left: .9375em;
+		padding-right: .9375em;
 	}
 	nav ul ul{
+		display: none;
+	}
+	nav ul li:hover ul,
+	nav ul li:focus ul{
 		display: none;
 	}
 	nav span{
