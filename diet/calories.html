@@ -8,18 +8,39 @@
 	<meta name="Generator" content="Cocoa HTML Writer">
 	<meta name="CocoaVersion" content="2575.7">
 	<style>
-		section img{
-			float: right;
-			border: black solid 1px;
-			margin-left: 5px;
+		caption{
+			text-align: Center;
+			font-weight: bold;
+			font-size: 200%;
 		}
-		section p{
-			margin-bottom: 15px;
+		table{
+			border: 1px solid black;
+			margin-bottom: 5px;
+			padding-left: 5px;
+			padding-right: 5px;
+			margin-left: auto;
+			margin-right: auto;
 		}
-		section h3{
-			margin-bottom: 6px;
+		thead th{
+			text-align: left;
+			color: maroon;
+			font-size: 120%;
 		}
-
+		td, th{
+			width: 20%;
+		}
+		tbody td:first-child{
+			vertical-align: top;
+			text-align: left;
+			font-weight: bold;
+		}
+		thead th:last-child,
+		tbody td:last-child{
+			text-align: right;
+		}
+		tfoot{
+			text-align: left;
+		}
 	</style>
 </head>
 <body>
@@ -77,10 +98,8 @@
 		</ul>
 	</aside>
 	<section>
-		<h1>Calorie Counter</h1>
-		<h1>Calorie Counter</h1>
-
 		<table>
+			<caption>Calorie Counter</caption>
 			<thead>
 			<tr>
 				<th>Category</th>
@@ -200,8 +219,16 @@
 			</tr>
 
 			</tbody>
+
+			<tfoot>
+				<tr>
+					<td colspan="4">
+						Note: Contact us to get a detailed list of food calories.
+					</td>
+				</tr>
+			</tfoot>
+
 		</table>
-		<p><strong>Note:</strong> Contact us to get a detailed list of food calories.</p>
 
 
 	</section>
